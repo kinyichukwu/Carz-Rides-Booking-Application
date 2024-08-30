@@ -1,0 +1,51 @@
+#rateCustomer{
+    min-height: 100vh;
+    @include flex-col;
+    padding: $m-pad;
+
+    @include mobile{
+        padding: $s-pad;
+    }
+    
+    .rating--container{
+        border: 1px solid $grey;
+        width: 50%;
+        padding: $l-pad $m-pad;
+        @include flex-col;
+        margin: auto;
+
+        @include mobile{
+            width: 100%;
+            padding: $m-pad $xs-pad;
+
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+        div{
+            margin: auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        textarea{
+            padding-inline: $m-pad;
+            width: 100%;
+            position: relative;
+
+            @include mobile{
+                padding-inline: $s-pad;
+
+            }
+        }
+
+        button{
+            bottom: 10px;
+            right: 10px;
+            position: absolute;
+        }
+
+    }
+}
